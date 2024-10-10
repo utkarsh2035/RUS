@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ab003c;
+    color: #fff;
+    padding: 0 5rem;
+}
+.logo{
+    font-size: 3rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+h3:hover{
+    text-decoration: underline;
+    scale: 1.01;
+    cursor: pointer;
+}
+.mode{
+    cursor: pointer;
+}
