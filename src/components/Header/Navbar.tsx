@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="logo">
-        Utkarsh
+        RUS
       </div>
       <div className="menu">
         <Link to="/"><h3>Home</h3></Link>
