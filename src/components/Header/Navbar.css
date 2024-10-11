@@ -19,6 +19,10 @@ h3:hover{
     scale: 1.01;
     cursor: pointer;
 }
+.menu a{
+    text-decoration: none;
+    color: white;
+}
 .mode{
     cursor: pointer;
 }

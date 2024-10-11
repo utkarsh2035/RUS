@@ -3,22 +3,24 @@ import './Navbar.css';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { getDialogContentTextUtilityClass } from '@mui/material';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [isDark, setDark] = useState(true)
     const chnageTheme = ()=>{
       setDark(!isDark)
       document.body.style.backgroundColor = isDark ? "black": "white"
+      document.body.style.color = isDark ? "black": "white"
     }
   return (
     <div className='navbar'>
       <div className="logo">
-        RUS
+        Utkarsh
       </div>
       <div className="menu">
-        <h3>Home</h3>
-        <h3>About</h3>
-        <h3>Services</h3>
-        <h3>Contact Us</h3>
+        <Link to="/"><h3>Home</h3></Link>
+        <Link to="/about"><h3>About</h3></Link>
+        <Link to="/contact"><h3>Contact</h3></Link>
+        <Link to="/product"><h3>Product</h3></Link>
       </div>
       <div className="mode" onClick={chnageTheme}>
         {isDark? <DarkModeIcon/> : <WbSunnyIcon/>}

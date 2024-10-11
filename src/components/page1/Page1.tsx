@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Page1 = () => {
+const Page1 = (props:any) => {
+  console.log(props)
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>Hello {props}</h1>
     </div>
   )
 }
