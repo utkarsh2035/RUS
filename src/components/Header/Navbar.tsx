@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
-import './Navbar.css';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { AppBar, Box, Button, getDialogContentTextUtilityClass, Toolbar } from '@mui/material';
-import { Link } from 'react-router-dom';
-import logo from './logo.png'
+import React from 'react';
+import { AppBar, Toolbar, Button, Box, Link } from '@mui/material';
+import logo from './logo.png';
+
 const Navbar: React.FC = () => {
   return (
     <AppBar
